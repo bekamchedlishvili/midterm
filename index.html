@@ -34,10 +34,15 @@
   </head>
   <body>
     <div class="page-container">
+      <input type="checkbox" id="menu-toggle" hidden />
+      <!-- მობ ვერს. -->
       <aside class="sidebar">
         <div class="logo-wrapper">
           <h2 class="logo">design.today</h2>
-          <img src="images/menu-icon.png" alt="menu" class="menu-icon" />
+          <label for="menu-toggle" class="menu-icon-btn">
+            <img src="images/menu-icon.png" alt="menu" class="menu-icon" />
+          </label>
+          <!-- მობ ვერს. -->
         </div>
         <nav class="main-nav">
           <ul>
@@ -115,6 +120,10 @@
       </aside>
 
       <div class="content-wrapper">
+        <label for="menu-toggle" class="mobile-menu-trigger">
+          <img src="images/menu-icon.png" alt="open menu" />
+        </label>
+        <!-- მობ ვერს. -->
         <header class="top-header">
           <div class="search-box">
             <input type="text" placeholder="Search inspiration" />
@@ -140,11 +149,14 @@
               </a>
             </div>
 
-            <img
-              src="images/avatar.png"
-              alt="User Profile"
-              class="user-avatar"
-            />
+            <a href="page2.html">
+              <img
+                src="images/avatar.png"
+                alt="User Profile"
+                class="user-avatar"
+              />
+            </a>
+
             <label for="file-upload" class="upload-btn">UPLOAD</label>
             <input
               type="file"
