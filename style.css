@@ -547,3 +547,37 @@
     }
   }
 }
+.page-2 {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
+
+  .page2 {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+    color: #555555;
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.03);
+    transition: all 0.25s ease;
+
+    &:hover {
+      color: #ffffff;
+      background-color: #ff007f;
+      border-color: #ff007f;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 15px rgba(255, 0, 127, 0.25);
+    }
+
+    &:active {
+      transform: translateY(0);
+    }
+  }
+}
